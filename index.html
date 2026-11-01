@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Pop Trivia Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>✨ K-Pop Trivia Arcade ✨</h1>
+      <div class="stats">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Streak: <strong id="streak">0</strong> 🔥</span>
+      </div>
+    </header>
+
+    <main id="quiz-card">
+      <div id="category-badge">Category</div>
+      <h2 id="question">Loading trivia question...</h2>
+      <div id="options" class="options-grid"></div>
+      <p id="feedback" class="feedback-text"></p>
+    </main>
+
+    <button id="next-btn" class="hidden">Next Question ➔</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
