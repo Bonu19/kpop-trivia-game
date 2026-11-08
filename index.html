@@ -4,28 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>K-Pop Trivia Arcade</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #667eea; color: white; padding: 50px; }
+    .card { background: white; color: #333; max-width: 400px; margin: auto; padding: 20px; border-radius: 15px; }
+    button { background: #764ba2; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; margin: 5px; }
+  </style>
 </head>
 <body>
-  <div class="game-container">
-    <header>
-      <h1>✨ K-Pop Trivia Arcade ✨</h1>
-      <div class="stats">
-        <span>Score: <strong id="score">0</strong></span>
-        <span>Streak: <strong id="streak">0</strong> 🔥</span>
-      </div>
-    </header>
-
-    <main id="quiz-card">
-      <div id="category-badge">Category</div>
-      <h2 id="question">Loading trivia question...</h2>
-      <div id="options" class="options-grid"></div>
-      <p id="feedback" class="feedback-text"></p>
-    </main>
-
-    <button id="next-btn" class="hidden">Next Question ➔</button>
+  <div class="card">
+    <h1>✨ K-Pop Trivia Arcade ✨</h1>
+    <p>Which K-pop group debuted with 'No More Dream' in 2013?</p>
+    <button onclick="alert('Correct! 🎉')">BTS</button>
+    <button onclick="alert('Try again!')">EXO</button>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
